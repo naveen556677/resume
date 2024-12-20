@@ -3,74 +3,144 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title> Resume</title>
+    <title>Resume</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            display: flex;
+        }
+
+        /* Left Sidebar Styles */
+        .sidebar {
+            width: 25%;
+            background-color: #f4f4f4;
+            padding: 20px;
+            box-sizing: border-box;
+            height: 100vh;
+            position: sticky;
+            top: 0;
+        }
+
+        .sidebar h1 {
+            font-size: 24px;
+            margin-bottom: 10px;
+        }
+
+        .sidebar p {
+            font-size: 16px;
+            margin: 10px 0;
+        }
+
+        .sidebar a {
+            color: #000;
+            text-decoration: none;
+        }
+
+        /* Main Content Styles */
+        .content {
+            width: 75%;
+            padding: 20px;
+            box-sizing: border-box;
+        }
+
+        h2 {
+            font-size: 20px;
+            margin-bottom: 10px;
+        }
+
+        ul {
+            list-style-type: none;
+            padding: 0;
+        }
+
+        ul li {
+            margin-bottom: 10px;
+        }
+
+        footer {
+            text-align: center;
+            padding: 10px;
+            font-size: 0.9em;
+        }
+    </style>
 </head>
 <body>
-    <header style="text-align: center; padding: 10px 10px 1px 10px;">
+
+    <!-- Sidebar -->
+    <div class="sidebar">
         <h1>NAVEENKUMAR S</h1>
-        <p>Email:<a href="naveenkumar0556677@gmail.com "> naveenkumar0556677@gmail.com</a> | Phone:<a href="7604840195">7604840195</a> | LinkedIn:<a href="https://www.linkedin.com/in/naveenkumar-s-6734b332b"> https://www.linkedin.com/in/naveenkumar-s-6734b332b </a>| GitHub: 
-        <a href="https://github.com/naveen556677">https://github.com/naveen556677</a></p>
-    </header>
-
-    <section>
-        <h2>Objective</h2>
-        <p>Motivated fresher with strong skills in HTML, CSS, JavaScript, React.js, Java, and SQL. Seeking a software development role where I can apply my skills and grow professionally, contributing to innovative web solutions.</p>
+        <section>
+            <h2>Contact Information</h2>
+        <p><strong>Email:</strong> <a href="mailto:naveenkumar0556677@gmail.com">naveenkumar0556677@gmail.com</a></p>
+        <p><strong>Phone:</strong> <a href="tel:+917604840195">7604840195</a></p>
+        <p><strong>LinkedIn:</strong> <a href="https://www.linkedin.com/in/naveenkumar-s-6734b332b" target="_blank">https://www.linkedin.com/in/naveenkumar-s-6734b332b</a></p>
+       
     </section>
+         <section>
+            <h2>Technical Skills</h2>
+            <ul>
+                <li><strong>Programming Languages:</strong> Java, JavaScript</li>
+                <li><strong>Web Technologies:</strong> HTML5, CSS3, JavaScript, React.js</li>
+                <li><strong>Databases:</strong> SQL, MySQL</li>
+                <li><strong>Other Skills:</strong> Responsive Design, Debugging</li>
+            </ul>
+        </section>
 
-    <section>
-        <h2>Technical Skills</h2>
-        <ul>
-            <li><strong>Programming Languages:</strong> Java, JavaScript</li>
-            <li><strong>Web Technologies:</strong> HTML5, CSS3, JavaScript, React.js</li>
-            <li><strong>Databases:</strong> SQL, MySQL</li>
-            <li><strong>Frameworks:</strong> React.js</li>
-            <li><strong>Other Skills:</strong> Responsive Design, Debugging</li>
-        </ul>
-    </section>
-     <section>
         <h2>Soft Skills</h2>
         <ul>
-            <li><strong>Problem-Solving:</strong> Ability to break down complex problems and develop effective solutions, ensuring smooth development processes.</li>
-            <li><strong>Teamwork and Collaboration:</strong> Strong collaboration skills, with the ability to work effectively in cross-functional teams to deliver high-quality software.</li>
-            <li><strong>Adaptability:</strong> Comfortable with quickly adapting to new tools, technologies, and workflows in a dynamic environment.</li>
-            <li><strong>Willingness to Learn:</strong> Always eager to learn new technologies, approaches, and methodologies to stay up-to-date with industry trends.</li>
+            <li><strong>Problem-Solving:</strong> Ability to break down complex problems and develop effective solutions.</li>
+            <li><strong>Teamwork and Collaboration:</strong> Strong collaboration skills in cross-functional teams.</li>
+            <li><strong>Willingness to Learn:</strong> Eager to learn new technologies and methodologies.</li>
         </ul>
-    </section>
+    </div>
 
-    <section>
-        <h2>Education</h2>
-        <ul>
-            <li><strong>Bachelor of Engineering in Computer Science</strong> -Paavai college of engineering, Graduated: 2024 with 7.82CGPA</li>
-            <li><strong>Senior Secondary School</strong> - Shinehill academy matric hr, sec, school, Graduation: 2020 with 71%</li>
-            <li><strong>Secondary School</strong> - Shinehill academy matric hr, sec, school, Graduation: 2018 with 88%</li>
-        </ul>
-    </section>
+    <!-- Main Content -->
+    <div class="content">
+        <section>
+            <h2>Objective</h2>
+            <p>Motivated fresher with strong skills in HTML, CSS, JavaScript, React.js, Java, and SQL. Seeking a software development role where I can apply my skills and grow professionally, contributing to innovative web solutions.</p>
+        </section>
 
-    <section>
-        <h2>Certifications</h2>
-        <ul>
-            <li><strong>Java Programming</strong> (GreatLearning) - Completed a comprehensive course on Java programming, focusing on object-oriented principles, data structures, and algorithms.
-            </li>
-    </section>
+       
 
-    <section>
-        <h2>Projects</h2>
-        <ul>
-            <li>
-                <strong>Notes Application</strong> - Developed a simple note-taking application using HTML, CSS, and JavaScript. The app allows users to add, edit, and delete notes, with local storage integration for saving notes across sessions. <br>
-                <em>Technologies used:</em> HTML, CSS, JavaScript, Local Storage.
-            </li>
-            <li>
-                <strong>Zomato Webpage Clone</strong> - Built a webpage similar to Zomato's homepage using HTML and CSS. Focused on creating a responsive layout and implementing design elements like navigation bars, food categories, and restaurant listings. <br>
-                <em>Technologies used:</em> HTML, CSS.
-            </li>
-            <li>
-                <strong>Portfolio Website</strong> - Developed a personal portfolio website using HTML, CSS, and JavaScript to showcase projects and skills, providing a detailed introduction and project showcase for potential employers. <br>
-                <em>Technologies used:</em> HTML, CSS, JavaScript.
-            </li>
-        </ul>
-    </section>
+        <section>
+            <h2>Education</h2>
+            <ul>
+                <li><strong>Bachelor of Engineering in Computer Science</strong> - Paavai College of Engineering, Graduated: 2024 with 7.82 CGPA</li>
+                <li><strong>Senior Secondary School</strong> - Shinehill Academy Matric Hr. Sec. School, Graduation: 2020 with 71%</li>
+                <li><strong>Secondary School</strong> - Shinehill Academy Matric Hr. Sec. School, Graduation: 2018 with 88%</li>
+            </ul>
+        </section>
 
+        <section>
+            <h2>Certifications</h2>
+            <ul>
+                <li><strong>Java Programming</strong> (GreatLearning) - Completed a comprehensive course on Java programming, focusing on object-oriented principles, data structures, and algorithms.</li>
+            </ul>
+        </section>
+
+        <section>
+            <h2>Projects</h2>
+            <ul>
+                <li>
+                    <strong>Notes Application</strong> - Developed a simple note-taking application using HTML, CSS, and JavaScript. The app allows users to add, edit, and delete notes, with local storage integration for saving notes across sessions. <br>
+                    <em>Technologies used:</em> HTML, CSS, JavaScript, Local Storage.
+                </li>
+                <li>
+                    <strong>Zomato Webpage Clone</strong> - Built a webpage similar to Zomato's homepage using HTML and CSS. Focused on creating a responsive layout and implementing design elements like navigation bars, food categories, and restaurant listings. <br>
+                    <em>Technologies used:</em> HTML, CSS.
+                </li>
+                <li>
+                    <strong>Portfolio Website</strong> - Developed a personal portfolio website using HTML, CSS, and JavaScript to showcase projects and skills. <br>
+                    <em>Technologies used:</em> HTML, CSS, JavaScript.
+                </li>
+            </ul>
+        </section>
+
+       
+    </div>
 
 </body>
 </html>
